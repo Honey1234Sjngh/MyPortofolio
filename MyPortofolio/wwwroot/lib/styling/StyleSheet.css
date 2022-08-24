@@ -1,0 +1,101 @@
+﻿head, nav, body, header {
+    background-image: url("bg.svg");
+    background-color: #0c1424;
+    background-size: 1550px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.6;
+    
+}
+.home {
+    margin-top: 100px ;
+    margin-left:75px;
+
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.container {
+    display: inline-block;
+    margin-left:65px
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 8s infinite;
+    color: #febd01;
+}
+.tyyped {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #febd01;
+}
+
+@keyframes typing {
+    from {
+        width: 0px
+    }
+
+    to {
+        width: 300px
+    }
+}
+
+.navbar-toggler {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+    background: #febd01;
+    border: none;
+}
+a:hover {
+    background-color: #febd01;
+}
+button:hover {
+    background-color: #febd01;
+}
+.nav-item {
+margin-right:30px;
+}
+.anchor {
+    background-color: #0c1424;
+    border: solid;
+    margin-left: 80px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    display: block;
+width: 7%;
+text-align:center;
+color:white
+}
+label {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background: #0c0c17;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+.footer {
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    height: 50px;
+}
+.privacyhead {
+    background-color: #0c1424;
+}
