@@ -26,7 +26,16 @@ namespace MyPortofolio.Controllers
         {
             return View();
         }
-
+        public IActionResult Download()
+        {
+            var link = "D:\\Downloads\\Profile (1).pdf";
+            var net = new System.Net.WebClient();
+            var data = net.DownloadData(link);
+            var content = new System.IO.MemoryStream(data);
+            var contentType = "APPLICATION/octet-stream";
+            var fileName = "Resume.pdf";
+            return File(content, contentType, fileName);
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
